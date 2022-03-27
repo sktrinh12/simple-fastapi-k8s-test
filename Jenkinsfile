@@ -4,6 +4,7 @@ pipeline {
     }
    environment {
         reigstry = "sktrinh12/fastapi-k8s"
+   }
    agent {
        dockerfile { dockerfile true }
    }
