@@ -1,11 +1,11 @@
 pipeline {
+   agent { dockerfile true }
    options {
        ansiColor('xterm')
-    }
+   }
    environment {
         reigstry = "sktrinh12/fastapi-k8s"
    }
-   agent { dockerfile true }
    stages {
        stage('Checkout') {
            steps {
